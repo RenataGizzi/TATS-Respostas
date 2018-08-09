@@ -1,16 +1,17 @@
 O que é o teste de software? Qual a melhor definição?
-É a análise do software com o objetivo de garantir a qualidade do mesmo, garantindo que ele não apresente nenhuma falha ou defeito.
+É a análise do software com o objetivo de garantir a qualidade do mesmo, garantindo que ele não apresente nenhuma falha ou defeito, e essa análise deve ser feita por meio de execução.
 
 - O que é teste de unidade, integração e sistema?
 O teste de unidade testa cada unidade do sistema, separadamente. Em sistemas orientados a objeto geralmente essa unidade é uma classe.
 O teste de integração testa de a integração entre duas partes do sistema, para garantir que essa comunição esteja funcionando da maneira correta. externos
 O teste de sistema testa as funcionalidades do sistema, para garantir que ele esteja funcionando corretamente.
+
 - O que é um caso de teste? Dê exemplos.
 Um caso de teste é uma condição que deve ser testada, é composto por valores de entrada, condições para execução e resultado esperado.
 Exemplo: Testar um campo para nomes, onde o máximo de letras são 50. A condição a ser testada é o nome, o valor de entrada é um nome com 51 caracteres e o resultado esperado é que o nome não seja aceito.
 
 - Qual a diferença entre um teste manual e um teste automatizado?
-Teste manual é realizado por uma pessoa, já o teste automatizado é realizado através de um software programado por uma pessoa, e depois disso pode ser feito 
+Teste manual é realizado manualmente por uma pessoa, já o teste automatizado é realizado através de um software programado por uma pessoa, e depois disso pode ser feito automaticamente.
 
 - Explique a diferença entre o teste caixa-branca e o teste caixa-preta.
 Teste caixa-branca é feito com base no código fonte e o teste caixa-preta é feito sem acesso ao código fonte.
