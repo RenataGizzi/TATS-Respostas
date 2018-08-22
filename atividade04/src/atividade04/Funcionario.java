@@ -21,19 +21,19 @@ public class Funcionario {
         
         MsgErro = "";
         if(nome == "") {
-            MsgErro = "Nome vazio! Informe um nome válido.\n";
+            MsgErro += "Nome vazio! Informe um nome válido.\n";
         }
         if(email == " ") {
-            MsgErro = "E-mail vazio! Informe um e-mail válido.\n";
+            MsgErro += "E-mail vazio! Informe um e-mail válido.\n";
         }
         if (SalarioBase <= 0) {
-            MsgErro = "Salário inválido. Informe um salário maior que zero.\n";
+            MsgErro += "Salário inválido. Informe um salário maior que zero.\n";
         }
         if(cargo == " ") {
-            MsgErro = "Cargo vazio. Informe um cargo válido.\n";
+            MsgErro += "Cargo vazio. Informe um cargo válido.\n";
         }
         else if (cargo != "desenvolvedor" || cargo != "DBA" || cargo != "testador" || cargo != "gerente") {
-            MsgErro = "Cargo inválido. Informe um cargo válido.\n";
+            MsgErro += "Cargo inválido. Informe um cargo válido.\n";
         }
     }
 
@@ -68,6 +68,5 @@ public class Funcionario {
     public String getCargo() {
         return cargo;
     }
-    
     
 }

@@ -22,4 +22,14 @@ public class Teste {
         float salarioFinal = c.pressionarBotaoCalcular();
         assertEquals(4000f, salarioFinal, 0.01);
     }
+    @Test
+    public void NomeVazio() {
+        Funcionario c = new Funcionario();
+        c.setNome(" ");
+        c.setEmail("astolfinho@gmail.com");
+        c.setSalarioBase(5000f);
+        c.setCargo("desenvolvedor");
+        float salarioFinal = c.pressionarBotaoCalcular();
+        assertEquals("Nome vazio! Informe um nome válido.\n");
+    }
 }
