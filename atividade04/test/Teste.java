@@ -17,9 +17,9 @@ public class Teste {
         Funcionario c = new Funcionario();
         c.setNome("Astolfo");
         c.setEmail("astolfinho@gmail.com");
-        c.setSalarioBase(2800f);
+        c.setSalarioBase(5000f);
         c.setCargo("desenvolvedor");
         float salarioFinal = c.pressionarBotaoCalcular();
-        assertEquals(2520f, salarioFinal, 0.01);
+        assertEquals(4000f, salarioFinal, 0.01);
     }
 }
