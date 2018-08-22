@@ -33,7 +33,7 @@ public class Funcionario {
             MsgErro += "Cargo vazio. Informe um cargo válido.\n";
         }
         else if (!cargo.equals("desenvolvedor") || !cargo.equals("DBA") || !cargo.equals("testador") || !cargo.equals("gerente")) {
-            MsgErro  "Cargo inválido. Informe um cargo válido.\n";
+            MsgErro += "Cargo inválido. Informe um cargo válido.\n";
         }
     }
 
