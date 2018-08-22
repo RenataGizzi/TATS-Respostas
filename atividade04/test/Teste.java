@@ -23,6 +23,18 @@ public class Teste {
         assertEquals(4000f, salarioFinal, 0.01);
     }
     @Test
+        public void Desenvolvedor2mil() {
+        Funcionario c = new Funcionario();
+        c.setNome("Astolfo");
+        c.setEmail("astolfinho@gmail.com");
+        c.setSalarioBase(2000f);
+        c.setCargo("desenvolvedor");
+        float salarioFinal = c.pressionarBotaoCalcular();
+        assertEquals(1800f, salarioFinal, 0.01);
+    }
+    
+    
+    @Test
     public void TodosCamposVazios() {
         Funcionario c = new Funcionario();
         c.setNome(" ");
