@@ -32,4 +32,14 @@ public class Teste {
         float salarioFinal = c.pressionarBotaoCalcular();
         assertEquals("Nome vazio! Informe um nome válido.\n" + "E-mail vazio! Informe um e-mail válido.\n" + "Salário inválido. Informe um salário maior que zero.\n" + "Cargo vazio. Informe um cargo válido.\n", c.getMsgErro());
     }
+    @Test
+    public void Cargo() {
+        Funcionario c = new Funcionario();
+        c.setNome("Astolfo");
+        c.setEmail("astolfinho@gmail.com");
+        c.setSalarioBase(5000f);
+        c.setCargo("jbkb");
+        float salarioFinal = c.pressionarBotaoCalcular();
+        assertEquals("Cargo inválido. Informe um cargo válido.\n", c.getMsgErro());
+    }
 }
