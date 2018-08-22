@@ -20,19 +20,19 @@ public class Funcionario {
     public void validar() {
         
         MsgErro = "";
-        if(nome == "") {
+        if(nome.equals(" ")) {
             MsgErro += "Nome vazio! Informe um nome válido.\n";
         }
-        if(email == " ") {
+        if(email.equals(" ")) {
             MsgErro += "E-mail vazio! Informe um e-mail válido.\n";
         }
         if (SalarioBase <= 0) {
             MsgErro += "Salário inválido. Informe um salário maior que zero.\n";
         }
-        if(cargo == " ") {
+        if(cargo.equals(" ")) {
             MsgErro += "Cargo vazio. Informe um cargo válido.\n";
         }
-        else if (cargo != "desenvolvedor" || cargo != "DBA" || cargo != "testador" || cargo != "gerente") {
+        else if (!cargo.equals("desenvolvedor") || !cargo.equals("DBA") || !cargo.equals("testador") || !cargo.equals("gerente")) {
             MsgErro += "Cargo inválido. Informe um cargo válido.\n";
         }
     }
@@ -43,6 +43,14 @@ public class Funcionario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setMsgErro(String MsgErro) {
+        this.MsgErro = MsgErro;
+    }
+
+    public String getMsgErro() {
+        return MsgErro;
     }
 
     public void setSalarioBase(float SalarioBase) {
@@ -68,5 +76,4 @@ public class Funcionario {
     public String getCargo() {
         return cargo;
     }
-    
 }

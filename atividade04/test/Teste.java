@@ -23,13 +23,13 @@ public class Teste {
         assertEquals(4000f, salarioFinal, 0.01);
     }
     @Test
-    public void NomeVazio() {
+    public void TodosCamposVazios() {
         Funcionario c = new Funcionario();
         c.setNome(" ");
-        c.setEmail("astolfinho@gmail.com");
-        c.setSalarioBase(5000f);
-        c.setCargo("desenvolvedor");
+        c.setEmail(" ");
+        c.setSalarioBase(0f);
+        c.setCargo(" ");
         float salarioFinal = c.pressionarBotaoCalcular();
-        assertEquals("Nome vazio! Informe um nome válido.\n");
+        assertEquals("Nome vazio! Informe um nome válido.\n" + "E-mail vazio! Informe um e-mail válido.\n" + "Salário inválido. Informe um salário maior que zero.\n" + "Cargo vazio. Informe um cargo válido.\n", c.getMsgErro());
     }
 }
