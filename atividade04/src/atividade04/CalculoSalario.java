@@ -12,7 +12,7 @@ public class CalculoSalario {
 
         if (cargo == "desenvolvedor") {
             if (SalarioBase >= 3000f) {
-                return SalarioBase - (SalarioBase * 0.2);
+                return (SalarioBase - (SalarioBase * 0.2f));
             } else {
                 return (SalarioBase - (SalarioBase * 0.1f));
             }
